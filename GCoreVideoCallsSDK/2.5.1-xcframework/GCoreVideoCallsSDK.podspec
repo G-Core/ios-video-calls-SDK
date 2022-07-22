@@ -11,7 +11,7 @@ Video calls via WebRTC based on G-Core Labs services for iOS.
   s.homepage         = 'https://github.com/G-Core/ios-video-calls-SDK'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'EvgenPol' => 'evgeniy.polubin@gcorelabs.com' }
-  s.source           = { :git => 'https://github.com/G-Core/ios-video-calls-SDK/blob/main/GCoreVideoCallsSDK.xcframework.zip', :tag => s.version.to_s }
+ s.source           = { :http => 'file:' + __dir__ + '/GCoreVideoCallsSDK.xcframework.zip' }
   s.swift_version      = '5.3'
   s.vendored_frameworks = "GCoreVideoCallsSDK.xcframework"
   s.ios.deployment_target = '12.0'
