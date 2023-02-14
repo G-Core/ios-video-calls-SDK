@@ -160,3 +160,18 @@ func roomClientHandle(_ client: GCoreRoomClient, mediaEvent: GCoreMediaEvent) {
   }
 }
 ```
+
+## Screen Sharing
+Currently, the SDK does not support the produce of screen sharing from the device, but allows you to receive from the outside.  
+
+In the method:
+``` swift
+func roomClientHandle(_ client: GCoreRoomClient, mediaEvent: GCoreMediaEvent)
+```
+The event case is coming:
+
+``` swift
+.handledRemoteScreenSharing(VideoObject: let object)
+```
+
+videoObject has a trackID field on it you can track when the video stream with screen sharing closes.
